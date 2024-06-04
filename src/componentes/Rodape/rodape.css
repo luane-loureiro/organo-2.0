@@ -15,3 +15,9 @@
 .footer ul li:last-child {
     margin-right: 0;
 }
+
+.footer .redes-sociais {
+    color: #FFF;
+    height:2rem;
+    width: 2rem;
+}

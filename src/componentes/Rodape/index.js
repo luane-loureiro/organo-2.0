@@ -1,4 +1,6 @@
-
+import { FaGithubAlt } from "react-icons/fa";
+import { ImLinkedin } from "react-icons/im";
+import { FaBehance } from "react-icons/fa";
 import './rodape.css'
 
 const Rodape = () => {
@@ -6,18 +8,18 @@ const Rodape = () => {
        <section>
        <ul>
             <li>
-                <a href="facebook.com" target="_blank">
-                    <img src="/imagens/facebook.png" alt="" />
+                <a href="https://github.com/luane-loureiro" target="_blank">
+                  <FaGithubAlt className="redes-sociais" />
                 </a>
             </li>
             <li>
-                <a href="twitter.com" target="_blank">
-                    <img src="/imagens/twitter.png" alt="" />
+                <a href="behttps://www.behance.net/luane-loureiro" target="_blank">
+                    <FaBehance className="redes-sociais"/>
                 </a>
             </li>
             <li>
-                <a href="instagram.com" target="_blank">
-                    <img src="/imagens/instagram.png" alt="" />
+                <a href="https://www.linkedin.com/in/luane-loureiro/" target="_blank">
+                    <ImLinkedin className="redes-sociais"/>
                 </a>
             </li>
         </ul>
@@ -27,7 +29,7 @@ const Rodape = () => {
        </section>
        <section>
         <p>
-            Desenvolvido por Alura.
+            Desenvolvido por Luane Loureiro.
         </p>
        </section>
     </footer>)

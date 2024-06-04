@@ -1,6 +1,7 @@
 .colaborador {
     position: relative;
     width: 280px;
+    margin: .8rem;
 }
 
 .colaborador .cabecalho {
@@ -20,6 +21,7 @@
     border-radius: 0px 0px 10px 10px;
     padding-top: 90px;
     padding-bottom: 40px;
+    height: 90px;
 }
 
 .colaborador .rodape h4 {

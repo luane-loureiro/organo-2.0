@@ -48,10 +48,10 @@ function App() {
   const inicial = [
     {
       id: uuidv4(),
-      nome: 'Luane ',
-      cargo: 'Desenvolvedora de software e instrutora',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
-      time: times[0].nome
+      nome: 'Luane Loureiro',
+      cargo: 'Desenvolvedora Web',
+      imagem: 'https://www.github.com/luane-loureiro.png',
+      time: times[1].nome
     },
     {
       id: uuidv4(),
@@ -238,10 +238,23 @@ function App() {
   return (
     <div>
       <Banner />
-      <Formulario aoCriarTime={cadastrarTime} times={times.map(time => time.nome)} aoCadastrar={colaborador => setColaboradores([...colaboradores, colaborador])} />
+      <Formulario 
+        aoCriarTime={cadastrarTime} 
+        times={times.map(time => time.nome)} 
+        aoCadastrar={colaborador => setColaboradores([...colaboradores, colaborador])} 
+      />
+      
       <section className="times">
         <h1>Minha organização</h1>
-        {times.map((time, indice) => <Time mudarCor={mudarCor} key={indice} time={time} colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)} aoDeletar={deletarColaborador} />)}
+        {times.map((time, indice) => 
+          <Time 
+            mudarCor={mudarCor} 
+            key={indice} 
+            time={time} 
+            colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)} 
+            aoDeletar={deletarColaborador} 
+          />
+        )}
       </section>
       <Rodape />
     </div>
